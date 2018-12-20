@@ -1,5 +1,5 @@
 # seraquechove
-
+<!--
 importar no tampermonkey <br>
 <br>
 // ==UserScript==<br>
@@ -7,8 +7,8 @@ importar no tampermonkey <br>
 // @version      0.1<br>
 // @description  try to take over the world!<br>
 // @author       Xinote<br>
-// @match        http://192.168.13.254/**<br>
-// @match        http://192.168.10.254/**<br>
+// @match        http://192.168.13.254/*<br>
+// @match        http://192.168.10.254/*<br>
 // @grant        GM_getResourceText<br>
 // @grant        GM_getResourceURL<br>
 // @grant        GM_addStyle<br>
@@ -22,3 +22,4 @@ importar no tampermonkey <br>
 var newCSS = GM_getResourceText ("seraquechovestyle");<br>
 GM_addStyle (newCSS);<br>
 <br>
+-->
