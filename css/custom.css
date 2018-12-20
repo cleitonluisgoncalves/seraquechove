@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url('https://use.fontawesome.com/releases/v5.6.1/css/all.css');
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 15px;
+    color: #fff;
+}
+h2, p, a{
+    font-family: 'Quicksand', sans-serif;
+    font-weight:lighter;
+    color: #fff;    
+}
+h2{
+    text-decoration: none;    
+}
+p {
+    text-align: center;
+}
+input{
+    color:#596a72;
+    letter-spacing:2px;
+    width: 100% !important;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    padding: 8px;
+    outline: none;
+    border: 1px solid #B0CFE0;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+input:focus{
+    box-shadow: 0 0 5px #B0CFE0;
+    border:1px solid #B0CFE0;
+}
+label{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+}
+form{
+    border: 2px solid #000;
+    width: 600px;
+    padding: 30px;
+    background: #6e7774;
+    background: -moz-linear-gradient(-45deg, #6e7774 0%, #0a0e0a 53%, #0a0e0a 53%, #0a0809 100%);
+    background: -webkit-linear-gradient(-45deg, #6e7774 0%,#0a0e0a 53%,#0a0e0a 53%,#0a0809 100%);
+    background: linear-gradient(135deg, #6e7774 0%,#0a0e0a 53%,#0a0e0a 53%,#0a0809 100%);
+}
+
+.logo{
+    background: center 10px no-repeat url('https://github.com/cleiton1nudo1/ups/blob/master/compaso-white.png?raw=true');
+}
+.oc{
+    background: #45484d;
+    background: -moz-linear-gradient(-45deg, #45484d 0%, #000000 100%);
+    background: -webkit-linear-gradient(-45deg, #45484d 0%,#000000 100%);
+    background: linear-gradient(135deg, #45484d 0%,#000000 100%);
+}
+.ic{
+    background: url('https://github.com/cleiton1nudo1/ups/blob/master/toasty.png?raw=true') right no-repeat;
+    background-position-y: 100%;
+    background-position-x: 120%;
+    transition: 2s;
+    background-size: 0px;
+}
+.ic:hover {
+    background-position-x: 100%;
+    background-size: 150px;
+}
+.fer input{
+    background: #f2f5f6;
+    background: -moz-linear-gradient(-45deg, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%);
+    background: -webkit-linear-gradient(-45deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+    background: linear-gradient(135deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+ display:inline-block;
+ cursor:pointer;
+ color:#596a72;
+    letter-spacing:2px;
+ font-size:12px;
+ padding:12px 60px;
+    text-transform: uppercase;
+ text-decoration: none;
+}
+.fer input:hover{
+    border: 1px solid #596a72;
+    color: #000;
+}
+.tempo-popup{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0, 0, 0,0.2);
+    position: fixed;
+    right: -200px;
+    top: 10%;
+    border: 1px solid #000;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.tempo-popup .content-popup h3{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 15%;
+}
+.tempo-popup .content-popup h4{
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    bottom: 35px;
+    left: 15%;
+}
+.tempo-popup .content-popup h5{
+    font-size: 8px;
+    color: #6a6a6a;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+}
+.tempo-popup .content-popup span{
+    font-size: 100px;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+.tempo-popup .button-popup{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 0;
+    left: -35px;
+    border-radius: 4px 0 0 4px;
+    background: linear-gradient(to right, #094660 30%, #000 100%);
+    cursor: pointer;
+}
+.tempo-popup .button-popup span{
+    position: absolute;
+    top: 25%;
+    left: 20%
+}
