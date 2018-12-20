@@ -8,3 +8,5 @@
         $(".tempo-popup").css('right','-200px');
     });
 })();
+var newCSS = GM_getResourceText ("seraquechovestyle");
+GM_addStyle (newCSS);
