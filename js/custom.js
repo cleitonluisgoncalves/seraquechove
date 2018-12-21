@@ -1,6 +1,6 @@
 ﻿(function() {
     'use strict';
-    $("body").append("<div class='tempo-popup'><div class='content-popup'><span class='fas fa-cloud-rain'></span><h3>Pancadas de Chuva</h3><h4>Nesse momento,</h4><h5>última atualização 21/12 - 13:00</h5></div><div class='button-popup'><span class='fas fa-meteor'></span></div></div>");
+    $("body").append("<div class='tempo-popup'><div class='content-popup'><span class='fas fa-sun'></span><h3>Solzao</h3><h4>Nesse momento,</h4><h5>última atualização 21/12 - 13:00</h5></div><div class='button-popup'><span class='fas fa-meteor'></span></div></div>");
     $(".button-popup").mouseover(function(){
       $(".tempo-popup").css({'right' : '0'});
       $(".button-popup").css({'left' : '0', 'opacity' : '0.0' });
