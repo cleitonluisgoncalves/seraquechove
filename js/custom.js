@@ -6,7 +6,7 @@
       $(".button-popup").css({'left' : '0', 'opacity' : '0.0' });
     });
     $(".tempo-popup").mouseleave(function(){
-        $(".tempo-popup").css('right','-200px');
+        $(".tempo-popup").css({'right','-200px'});
 	$(".button-popup").css({'left' : '-35px', 'opacity' : '1' });
     });
 })();
