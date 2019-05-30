@@ -23,7 +23,7 @@ $(document).ready(function () {
             error(err);
         }
     };
-   console.log(checkOnline(urlCore))
+   console.log(checkOnline(urlCore, function() {alert('Fora do ar!')}, function(){alert('Online')}))
 
     $(".oc").css("background", urlImg);
     $(".oc").css("background-size", "cover");
