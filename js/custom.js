@@ -17,13 +17,16 @@ $(document).ready(function () {
         var img = document.createElement('img');
         img.src = urlCore;
     
-        img.onload = function() {
+        if(img.onload) {( 
+            function(){
             urlImg = "url("+ urlCore +")";
-        }
-        img.onerror = function() {
-            getRandomInt();
-            is_img();
-            console.log(img.src);
+            }
+        )}else{
+            img.onerror = function() {
+                getRandomInt();
+                is_img();
+                console.log(img.src);
+            }
         }
     }
 
