@@ -11,5 +11,6 @@ $(document).ready(function () {
     var urlImg = "url(https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg)";
 
     $(".oc").css("background", urlImg);
+    $(".oc").css("background-size", "cover");
     
 });

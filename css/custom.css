@@ -49,11 +49,9 @@ label{
 }
 form{
     border: none;
-    width: 100%;
+    width: 600px;
     padding: 30px;
-    background: transparent;
-    position: fixed;
-    top: 0;
+    background: #8c959833;
 }
 
 .logo{
