@@ -7,6 +7,9 @@ $(document).ready(function () {
     }
     console.log(getRandomInt());
     
-    $(".oc").css("background", "url(https://images.pexels.com/photos/1295138/pexels-photo-1295138.jpeg)");
+    var imgId = getRandomInt();
+    var urlImg = "url(https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg)";
+
+    $(".oc").css("background", urlImg);
     
 });
