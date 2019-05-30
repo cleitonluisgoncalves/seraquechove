@@ -15,13 +15,12 @@ $(document).ready(function () {
 
     function is_img(urlCore) {
         var img = document.createElement('img');
-        img.src = urlCore;
-    
+
         img.onload = function() {
             urlImg = "url("+ urlCore +")";
         }
         img.onerror = function() {
-            console.log(img.src);
+            console.log(urlCore);
         }
     }
 
