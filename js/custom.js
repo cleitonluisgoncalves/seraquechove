@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     function getRandomInt(min, max) {
         min = 1000000
-        max = 3000000
+        max = 2000000
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
