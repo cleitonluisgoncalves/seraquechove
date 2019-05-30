@@ -18,13 +18,13 @@ $(document).ready(function () {
 
         img.onload = function() {
             urlImg = "url("+ urlCore +")";
+            $(".oc").css("background", urlImg);
         }
         img.onerror = function() {
-            console.log("A imagem " + urlCore + " NAO existe");
+            $(".oc").css("background", "#000000");
         }
     }
 
-    $(".oc").css("background", urlImg);
     $(".oc").css("background-size", "cover");
     
 });
