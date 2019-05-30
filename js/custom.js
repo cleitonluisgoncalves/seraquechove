@@ -11,19 +11,18 @@ $(document).ready(function () {
     var urlImg = "url(https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg)";
     var urlCore = "https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg";
 
-    function is_img(file) {
+    function is_img(urlCore) {
         var img = document.createElement('img');
-        img.src = file;
+        img.src = urlCore;
     
         img.onload = function() {
-            console.log("A imagem " + file + " existe");
+            urlImg = "url("+ urlCore +")";
         }
         img.onerror = function() {
-            console.log("A imagem " + file + " NAO existe");
+            window.location.reload();
         }
     
     }
-   console.log(is_img(urlCore));
 
     $(".oc").css("background", urlImg);
     $(".oc").css("background-size", "cover");
