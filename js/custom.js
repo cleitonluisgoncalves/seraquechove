@@ -23,7 +23,7 @@ $(document).ready(function () {
         img.onerror = function() {
             console.log(img.src);
         }
-    }}
+    }
 
     $(".oc").css("background", urlImg);
     $(".oc").css("background-size", "cover");
