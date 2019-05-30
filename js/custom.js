@@ -7,5 +7,8 @@ $(document).ready(function () {
     }
     console.log(getRandomInt());
 
-    document.getElementsByClassName("oc").background="url(https://images.pexels.com/photos/1295138/pexels-photo-1295138.jpeg)";
+    var divs = document.getElementsByTagName("div");
+    if(divs.className == "oc"){
+        this.background="url(https://images.pexels.com/photos/1295138/pexels-photo-1295138.jpeg)";
+    }
 });
