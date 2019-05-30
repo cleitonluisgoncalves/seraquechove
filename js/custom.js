@@ -17,18 +17,13 @@ $(document).ready(function () {
         var img = document.createElement('img');
         img.src = urlCore;
     
-        if(img.onload) {( 
-            function(){
+        img.onload = function() {
             urlImg = "url("+ urlCore +")";
-            }
-        )}else{
-            img.onerror = function() {
-                getRandomInt();
-                is_img();
-                console.log(img.src);
-            }
         }
-    }
+        img.onerror = function() {
+            console.log(img.src);
+        }
+    }}
 
     $(".oc").css("background", urlImg);
     $(".oc").css("background-size", "cover");
