@@ -23,6 +23,7 @@ $(document).ready(function () {
         img.onerror = function() {
             getRandomInt();
             is_img();
+            console.log(img.src);
         }
     }
 
