@@ -19,11 +19,11 @@ $(document).ready(function () {
         img.onload = function() {
             urlImg = "url("+ urlCore +")";
             $(".oc").css("background", urlImg);
-        }
+        };
         img.onerror = function() {
             $(".oc").css("background", "#000000");
-        }
-    }
+        };
+    };
 
     $(".oc").css("background-size", "cover");
     
