@@ -9,21 +9,21 @@ $(document).ready(function () {
     
     var imgId = getRandomInt();
     var urlImg = "url(https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg)";
-    var urlCore = "url(https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg";
+    var urlCore = "https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg";
 
-    function checkOnline(url, error, ok) {
-        try {
-            var scriptElem = document.createElement('script');
-            scriptElem.type = 'text/javascript';
-            scriptElem.onerror = function(){error();};
-            scriptElem.onload = function(){ok();};
-            scriptElem.src = url;
-            document.getElementsByTagName("body")[0].appendChild(scriptElem);
-        } catch(err) {
-            error(err);
+    function is_img(file) {
+        var img = document.createElement('img');
+        img.src = file;
+    
+        img.onload = function() {
+            console.log("A imagem " + file + " existe");
         }
-    };
-   console.log(checkOnline(urlCore, function() {alert('Fora do ar!')}, function(){alert('Online')}))
+        img.onerror = function() {
+            console.log("A imagem " + file + " NAO existe");
+        }
+    
+    }
+   console.log(is_img(urlCore));
 
     $(".oc").css("background", urlImg);
     $(".oc").css("background-size", "cover");
