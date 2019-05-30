@@ -8,5 +8,5 @@ $(document).ready(function () {
     console.log(getRandomInt());
     
     $(".oc").css("background", "url(https://images.pexels.com/photos/1295138/pexels-photo-1295138.jpeg)");
-    $(".oc").css("background-size", "cover");
+    
 });
