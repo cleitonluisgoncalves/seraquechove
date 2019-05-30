@@ -49,10 +49,10 @@ form{
     border: 2px solid #000;
     width: 600px;
     padding: 30px;
-    background: #6e7774;
-    background: -moz-linear-gradient(-45deg, #6e7774 0%, #0a0e0a 53%, #0a0e0a 53%, #0a0809 100%);
-    background: -webkit-linear-gradient(-45deg, #6e7774 0%,#0a0e0a 53%,#0a0e0a 53%,#0a0809 100%);
-    background: linear-gradient(135deg, #6e7774 0%,#0a0e0a 53%,#0a0e0a 53%,#0a0809 100%);
+    background: #111111;
+    background: -moz-linear-gradient(-45deg, #111111 0%, #0a0e0a 53%, #0a0e0a 53%, #0a0809 100%);
+    background: -webkit-linear-gradient(-45deg, #111111 0%,#0a0e0a 53%,#0a0e0a 53%,#0a0809 100%);
+    background: linear-gradient(135deg, #111111 0%,#0a0e0a 53%,#0a0e0a 53%,#0a0809 100%);
 }
 
 .logo{
