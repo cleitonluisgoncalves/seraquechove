@@ -2,7 +2,7 @@
 @import url('https://use.fontawesome.com/releases/v5.6.1/css/all.css');
 
 h1{
-    font-family: 'Quicksand', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     word-spacing: 15px;
@@ -46,13 +46,12 @@ label{
     color: #fff;
 }
 form{
-    border: 2px solid #000;
-    width: 600px;
+    border: none;
+    width: 100%;
     padding: 30px;
-    background: #111111;
-    background: -moz-linear-gradient(-45deg, #111111 0%, #0a0e0a 53%, #0a0e0a 53%, #0a0809 100%);
-    background: -webkit-linear-gradient(-45deg, #111111 0%,#0a0e0a 53%,#0a0e0a 53%,#0a0809 100%);
-    background: linear-gradient(135deg, #111111 0%,#0a0e0a 53%,#0a0e0a 53%,#0a0809 100%);
+    background: transparent;
+    position: fixed;
+    top: 0;
 }
 
 .logo{
