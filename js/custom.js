@@ -8,8 +8,8 @@ $(document).ready(function () {
     }
 
     var imgId = getRandomInt();
-    var urlImg = "url(https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg)";
-    var urlCore = "https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg";
+    var urlImg = "url(https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=1080&amp;w=1920)";
+    var urlCore = "https://images.pexels.com/photos/"+ imgId + "/pexels-photo-"+ imgId +".jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=1080&amp;w=1920";
 
     
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
             urlImg = "url("+ urlCore +")";
         }
         img.onerror = function() {
-            console.log(urlCore);
+            console.log("A imagem " + urlCore + " NAO existe");
         }
     }
 
