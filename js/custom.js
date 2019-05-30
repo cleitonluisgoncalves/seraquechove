@@ -15,12 +15,12 @@ $(document).ready(function () {
     function is_img(urlCore) {
         var img = document.createElement('img');
         img.src = urlCore;
-
-        img.onload = function() {
-            urlImg = "url("+ urlCore +")";
-        }
+        
         img.onerror = function() {
             $(".oc").css("background", "#000000");
+        }
+        img.onload = function() {
+            urlImg = "url("+ urlCore +")";
         }
     };
     $(".oc").css("background", urlImg);
